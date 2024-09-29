@@ -11,3 +11,5 @@ OUTPUT
 COPY Ecoli.fna to dir   
 
 cp /home/chuyascm/Ecoli.fna .  
+module load prodigal  
+
