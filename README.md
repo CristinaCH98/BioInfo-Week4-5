@@ -28,6 +28,9 @@ OUTPUT: prodigal_results.txt
 
 # Problem 4
 ## Script to run Prokka on all downloaded genomes
+
+module load prokka  
+
 touch Prokka_Problem4.sh  
 nano Prokka_Problem4.sh
 
