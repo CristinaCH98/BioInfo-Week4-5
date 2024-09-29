@@ -3,7 +3,7 @@
 touch Problem1.py 
 nano Problem1.py   
 > python Problem1.py  
-OUTPUT  
+OUTPUT   
 > Number of amino acids: 30  
 >Number of bases in the open reading frame: 93
 
