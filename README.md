@@ -1,4 +1,5 @@
 #Problem 1  
+## Amino Acid Sequence Count
 touch Problem1.py 
 nano Problem1.py   
 > python Problem1.py  
@@ -7,7 +8,7 @@ OUTPUT
 >Number of bases in the open reading frame: 93
 
 #Problem 2
-##Running Prodigal on a genome to count number of genes  
+## Running Prodigal on a genome to count number of genes  
 
 cp /home/chuyascm/Ecoli.fna .  
 module load prodigal  
