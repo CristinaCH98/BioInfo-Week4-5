@@ -1,4 +1,4 @@
-q#!/bin/bash
+#!/bin/bash
 #SBATCH--job-name=ash_script
 #SBATCH--output=ash.out
 #SBATCH--error=ash.err
