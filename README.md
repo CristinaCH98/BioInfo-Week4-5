@@ -7,5 +7,5 @@ OUTPUT
 
 #Problem 1 
 ##Running Prodigal on a genome to count number of genes
-COPY Ecoli.fna to dir  
-cp /home/chuyascm/Ecoli.fna .
+COPY Ecoli.fna to dir   
+cp /home/chuyascm/Ecoli.fna .  
