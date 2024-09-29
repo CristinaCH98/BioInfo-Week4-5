@@ -12,4 +12,7 @@ COPY Ecoli.fna to dir
 
 cp /home/chuyascm/Ecoli.fna .  
 module load prodigal  
+prodigal -i Ecoli.fna -o Ecoli.gbk -d Ecoli_genes.fna  
+grep ">" Ecoli_genes.fna -c > gene_count.txt  
+
 
