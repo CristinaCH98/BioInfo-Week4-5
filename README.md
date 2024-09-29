@@ -14,4 +14,5 @@ module load prodigal
 prodigal -i Ecoli.fna -o Ecoli.gbk -d Ecoli_genes.fna  
 grep ">" Ecoli_genes.fna -c > gene_count.txt  
 
+OUTPUT: gene_count.txt (4161)
 
