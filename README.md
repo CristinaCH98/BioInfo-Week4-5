@@ -5,10 +5,9 @@ OUTPUT
 > Number of amino acids: 30  
 >Number of bases in the open reading frame: 93
 
-#Problem 1  
-##Running Prodigal on a genome to count number of genes  
+#Problem 2
 
-COPY Ecoli.fna to dir   
+##Running Prodigal on a genome to count number of genes  
 
 cp /home/chuyascm/Ecoli.fna .  
 module load prodigal  
