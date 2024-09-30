@@ -40,13 +40,13 @@ sbatch  Problem4_Prokka.sh
 # Problem 5
 ## Extract and list all unique gene names annotated by Prokka using shell commands
 
-grep -h "gene=" /home/chuyascm/Week_5/prokka_output/*/*.gff | sed 's/.*gene=//; s/;.*//' | sort -u > unique_gene_names.txt
-head -n 5 unique_gene_names.txt
+grep -h "gene=" /home/chuyascm/Week_5/prokka_output/*/*.gff | sed 's/.*gene=//; s/;.*//' | sort -u > unique_gene_names.txt  
+head -n 5 unique_gene_names.txt  
 
- OUTPUT: 
-[chuyascm@login509-02-r prokka_output]$ head -n 5 unique_gene_names.txt
-aaaT
-aaeA
-aaeA_1
-aaeA_2
-aaeB
+ OUTPUT:   
+[chuyascm@login509-02-r prokka_output]$ head -n 5 unique_gene_names.txt  
+aaaT  
+aaeA  
+aaeA_1  
+aaeA_2  
+aaeB  
