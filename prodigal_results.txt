@@ -1,3 +1,0 @@
-Genome with the highest number of genes:
-File: /home/chuyascm/ncbi_dataset/data/GCF_000006745.1/GCF_000006745.1_ASM674v1_genomic.fna
-Number of genes: 3594
