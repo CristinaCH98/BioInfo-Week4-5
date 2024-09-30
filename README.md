@@ -31,6 +31,8 @@ OUTPUT: prodigal_results.txt
 
 module load prokka  
 
-touch Prokka_Problem4.sh  
-nano Prokka_Problem4.sh
-
+touch  
+nano 
+chmod +x 
+sbatch
+OUTPUT: Prokka_CDS_counts.txt
