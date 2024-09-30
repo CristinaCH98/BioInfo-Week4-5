@@ -29,10 +29,10 @@ OUTPUT: prodigal_results.txt
 # Problem 4
 ## Script to run Prokka on all downloaded genomes
 
-module load prokka  
+module load prokka    
 
-touch  
-nano 
+touch    
+nano   
 chmod +x 
-sbatch
-OUTPUT: Prokka_CDS_counts.txt
+sbatch  
+> OUTPUT: Prokka_CDS_counts.txt  
