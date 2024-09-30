@@ -18,7 +18,7 @@ grep ">" Ecoli_genes.fna -c > gene_count.txt
 OUTPUT: gene_count.txt (4161)
 
 # Problem 3
-## Script to run Prodigal on all downloaded genomes
+## Script to run Prodigal on all downloaded genomes - Prodigal.sh 
 touch Prodigal_Problem3.sh  
 nano Prodigal_Problem3.sh  
 chmod +x Prodigal_Problem3.sh  
