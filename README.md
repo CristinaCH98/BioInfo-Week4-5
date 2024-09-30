@@ -3,7 +3,7 @@
 touch Problem1.py 
 nano Problem1.py   
 > python Problem1.py  
-OUTPUT  
+OUTPUT   
 > Number of amino acids: 30  
 >Number of bases in the open reading frame: 93
 
@@ -19,5 +19,18 @@ OUTPUT: gene_count.txt (4161)
 
 # Problem 3
 ## Script to run Prodigal on all downloaded genomes
+touch Prodigal_Problem3.sh  
+nano Prodigal_Problem3.sh  
+chmod +x Prodigal_Problem3.sh  
+sbatch Prodigal_Problem3.sh  
 
+OUTPUT: prodigal_results.txt  
+
+# Problem 4
+## Script to run Prokka on all downloaded genomes
+
+module load prokka  
+
+touch Prokka_Problem4.sh  
+nano Prokka_Problem4.sh
 
