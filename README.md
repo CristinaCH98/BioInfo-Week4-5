@@ -57,3 +57,9 @@ aaeA
 aaeA_1  
 aaeA_2  
 aaeB  
+
+# Save on Git Repository
+
+git remote add origin https://github.com/CristinaCH98/BioInfo-Project..git  
+git branch -M main   
+git push -u origin main
