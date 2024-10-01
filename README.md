@@ -14,12 +14,12 @@ pip install biopython
 # Step 2. 
 
 ## Initialize git repository 
-mkdir Week_4  
-cd Week_4  
-git remote add origin https://github.com/CristinaCH98/BioInfo-Week4-5.git
-git init 
-git branch -m master main
-git status # check point
+mkdir Week_4    
+cd Week_4    
+git remote add origin https://github.com/CristinaCH98/BioInfo-Week4-5.git  
+git init   
+git branch -m master main  
+git status # check point  
 
 # Problem 1  
 ## Amino Acid Sequence Count
