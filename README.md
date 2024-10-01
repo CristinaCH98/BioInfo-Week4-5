@@ -1,7 +1,7 @@
 # Week 4 + 5: Genome annotation
 # LLM used for this task
 
-ChatGPT 40 mini.  
+ChatGPT 4o mini.  
 
 I used ChatGPT to address specific questions while developing a basic script. Initially, I created a simple version; then, I asked ChatGPT to improve it or make it more efficient to ensure the output was correct. This process helped refine the code and enhance its functionality.
 
