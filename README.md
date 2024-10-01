@@ -23,12 +23,12 @@ git status # check point
 
 # Problem 1  
 ## Amino Acid Sequence Count
-touch Problem1.py 
-nano Problem1.py   
-> python Problem1.py  
+touch Problem1.py  
+nano Problem1.py  
+> python Problem1.py    
 OUTPUT   
-> Number of amino acids: 30  
->Number of bases in the open reading frame: 93
+> Number of amino acids: 30    
+>Number of bases in the open reading frame: 93  
 
 # Problem 2
 ## Running Prodigal on a genome to count number of genes  
