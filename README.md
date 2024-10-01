@@ -5,6 +5,22 @@ ChatGPT 40 mini.
 
 I used ChatGPT to address specific questions while developing a basic script. Initially, I created a simple version; then, I asked ChatGPT to improve it or make it more efficient to ensure the output was correct. This process helped refine the code and enhance its functionality.
 
+# Step 1. 
+
+## Install Biopython 
+pip install biopython  
+> Successfully installed biopython-1.84 numpy-2.0.2
+
+# Step 2. 
+
+## Initialize git repository 
+mkdir Week_4  
+cd Week_4  
+git remote add origin https://github.com/CristinaCH98/BioInfo-Week4-5.git
+git init 
+git branch -m master main
+git status # check point
+
 # Problem 1  
 ## Amino Acid Sequence Count
 touch Problem1.py 
@@ -59,7 +75,5 @@ aaeA_2
 aaeB  
 
 # Save on Git Repository
-
-git remote add origin https://github.com/CristinaCH98/BioInfo-Project..git  
-git branch -M main   
+ 
 git push -u origin main
