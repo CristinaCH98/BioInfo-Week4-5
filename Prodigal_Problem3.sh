@@ -23,6 +23,7 @@ for genome in $(find /home/chuyascm/ncbi_dataset  -type f -name "*GCF*.fna"); do
     fi
 done
 
+# Checking for Maximum Gene Count
 result="Genome with the highest number of genes:
 File: $MAX_GENOME
 Number of genes: $MAX_GENES"
