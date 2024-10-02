@@ -42,12 +42,12 @@ OUTPUT: gene_count.txt (4161)
 
 # Problem 3
 ## Script to run Prodigal on all downloaded genomes - Prodigal.sh 
-touch Prodigal_Problem3.sh  
-nano Prodigal_Problem3.sh  
-chmod +x Prodigal_Problem3.sh  
-sbatch Prodigal_Problem3.sh  
+touch Problem3_Prodigal.sh 
+nano Problem3_Prodigal.sh  
+chmod +x Problem3_Prodigal.sh
+sbatch Problem3_Prodigal.sh
 
-OUTPUT: prodigal_results.txt  
+OUTPUT: prodigal_results.txt  and all_genome_counts_prodigal.txt
 
 # Problem 4
 ## Script to run Prokka on all downloaded genomes
