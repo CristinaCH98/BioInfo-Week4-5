@@ -1,11 +1,34 @@
+# Week 4 + 5: Genome annotation
+# LLM used for this task
+
+ChatGPT 4o mini.  
+
+I used ChatGPT to address specific questions while developing a basic script. Initially, I created a simple version; then, I asked ChatGPT to improve it or make it more efficient to ensure the output was correct. This process helped refine the code and enhance its functionality.
+
+# Step 1. 
+
+## Install Biopython 
+pip install biopython  
+> Successfully installed biopython-1.84 numpy-2.0.2
+
+# Step 2. 
+
+## Initialize git repository 
+mkdir Week_4    
+cd Week_4    
+git remote add origin https://github.com/CristinaCH98/BioInfo-Week4-5.git  
+git init   
+git branch -m master main  
+git status # check point  
+
 # Problem 1  
 ## Amino Acid Sequence Count
-touch Problem1.py 
-nano Problem1.py   
-> python Problem1.py  
+touch Problem1.py  
+nano Problem1.py  
+> python Problem1.py    
 OUTPUT   
-> Number of amino acids: 30  
->Number of bases in the open reading frame: 93
+> Number of amino acids: 30    
+>Number of bases in the open reading frame: 93  
 
 # Problem 2
 ## Running Prodigal on a genome to count number of genes  
@@ -50,3 +73,7 @@ aaeA
 aaeA_1  
 aaeA_2  
 aaeB  
+
+# Save on Git Repository
+ 
+git push -u origin main
