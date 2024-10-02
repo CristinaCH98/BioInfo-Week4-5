@@ -1,22 +1,24 @@
 #!/bin/bash
-#SBATCH--job-name=ash_script
-#SBATCH--output=ash.out
-#SBATCH--error=ash.err
-#SBATCH--time=1:00:00
+#SBATCH --job-name=ash_script
+#SBATCH --output=ash.out
+#SBATCH --error=ash.err
+#SBATCH --time=1:00:00
 
-OUTPUT_FILE="/home/chuyascm/Week_5/output_PRODIGAL.fna"
-
-
-RESULTS_FILE="/home/chuyascm/Week_5/prodigal_results.txt"
-
-ALL_COUNTS_FILE="/home/chuyascm/Week_5/all_genome_counts_prodigal.txt"
+OUTPUT_FILE="/home/chuyascm/Week_5/PRODIGAL_OUTPUT.fna"
+RESULTS_FILE="/home/chuyascm/Week_5/PRODIGAL_results.txt"
+ALL_COUNTS_FILE="/home/chuyascm/Week_5/ALL_genome_counts_prodigal.txt"
 
 MAX_GENES=0
 MAX_GENOME=""
-chmod +x .shchmod +x Prodigal_Problem3.sh
-for genome in $(find /home/chuyascm/ncbi_dataset  -type f -name "*GCF*.fna"); do
+
+for genome in $(find /home/chuyascm/ncbi_dataset/data -type f -name "*GCF*.fna"); do
 
     prodigal -i "$genome" -d "$OUTPUT_FILE"
+    if [ $? -ne 0 ]; then
+        echo "Error processing $genome" >> "$RESULTS_FILE"
+        continue
+    fi
+    
     gene_count=$(grep ">" -c "$OUTPUT_FILE")
     echo "$genome: $gene_count" >> "$ALL_COUNTS_FILE"
 
@@ -26,13 +28,11 @@ for genome in $(find /home/chuyascm/ncbi_dataset  -type f -name "*GCF*.fna"); do
     fi
 done
 
-result="Genome with the highest number of genes:
-File: $MAX_GENOME
-Number of genes: $MAX_GENES"
+result="Genome with the highest number of genes:\nFile: $MAX_GENOME\nNumber of genes: $MAX_GENES"
+echo -e "$result"
+echo -e "$result" > "$RESULTS_FILE"
 
-echo "$result"
-
-echo "$result" > "$RESULTS_FILE"
-
-rm "$OUTPUT_FILE"
+if [ -f "$OUTPUT_FILE" ]; then
+    rm "$OUTPUT_FILE"
+fi
 
